@@ -1,10 +1,11 @@
 ---
   - name: Print os facts
     hosts: all
+#    gather_facts: False
     tasks:
       - name: Print OS
         debug:
           msg: "{{ ansible_distribution }}"
-      - name: Print fact 
+      - name: Print fact
         debug:
           msg: "{{ some_fact }}"

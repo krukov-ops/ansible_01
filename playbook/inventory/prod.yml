@@ -1,9 +1,18 @@
 ---
-  el:
-    hosts:
-      centos7:
-        ansible_connection: docker
+#  el:
+#    hosts:
+#       192.168.2.152
+#      centos7:
+#      docker_py_01:
+#        ansible_connection: docker
   deb:
     hosts:
       ubuntu:
+#      docker_py_02:
         ansible_connection: docker
+  local:
+#  inside:
+    hosts:
+      localhost:
+        ansible_connection: local
+
